@@ -1,0 +1,29 @@
+{
+  "name": "pdsa-public-site-preview",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Palo Duro Soccer Association public website preview",
+  "scripts": {
+    "test": "node tests/node-smoke.cjs && node tests/payment-workflow.cjs && node tests/stripe-gateway.cjs && node --test tests/family-profile-validation.test.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "db:migrate:dev": "node --env-file=.env.local scripts/migrate-family-children.mjs",
+    "test:family-rls:dev": "node --env-file=.env.local --test tests/family-children-rls.integration.mjs"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "@neon/config": "^1.9.5",
+    "@neon/env": "^1.6.6",
+    "@neon/functions": "^0.11.0",
+    "@neondatabase/neon-js": "^0.9.0-beta",
+    "jose": "^6.2.13",
+    "pg": "^8.23.1",
+    "vite": "^8.3.5"
+  },
+  "overrides": {
+    "zod": "^4.6.7"
+  }
+}

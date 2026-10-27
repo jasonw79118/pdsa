@@ -1,0 +1,26 @@
+PDSA + TECHFORM CANYON — VS CODE AGENT HANDOFF
+================================================
+
+1) Open THIS FOLDER in Visual Studio Code.
+2) Read README.md. To view the working purple board demo,
+   open index.html in any browser (or use: npm run dev).
+3) Open AGENTS.md, AGENT_HANDOFF.md and docs/PAYMENTS_AND_CUTOVER.md.
+   Copy the prompt from docs/AGENT_START_PROMPT.md into
+   your VS Code coding agent to begin the implementation plan.
+
+Already demoed: light/dark switch, organization roles, sample registrations
+feeding evaluation scoring/CSV, provisional team balance, staff/volunteer/ref
+tracking, team-restricted coach view, targeted demo outbox, Techform-to-PDSA
+board approvals, calendar and simulated field safety statuses.
+
+Run a no-dependency smoke check with:
+    npm test
+
+SECURITY WARNING: FICTIONAL SAMPLE DATA ONLY. No real auth, emails, payments,
+Facebook publishing, or City of Canyon lightning integration exists.
+Do not collect real children's personal data with the demo.
+
+This ZIP also contains assets/design-reference-purple.png, previously
+created visual concepts. These are illustrative, not officially licensed logos.
+
+PAYMENTS + TRANSITION: Current PDSA cycle stays on Crossbar. Next registration starts on the new system only after sign-off. Techform uses a separate merchant account and bank settlement. See docs/PAYMENTS_AND_CUTOVER.md.

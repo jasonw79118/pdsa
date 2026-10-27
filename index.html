@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#361975">
+  <meta name="description" content="Palo Duro Soccer Association foundational soccer development for youth in Canyon, Texas and the Texas Panhandle.">
+  <title>Palo Duro Soccer Association</title>
+  <link rel="icon" href="assets/pdsa-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="/public-site.js"></script>
+  <script type="module" src="/src/family-auth.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-banner"><span class="dot"></span> PDSA FAMILY EXPERIENCE · AUTHENTICATION CONNECTED · FAMILY AND SEASON DATA STILL IN PREVIEW</div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <button class="brand reset-button" data-page="home" aria-label="Go to home">
+        <img class="brand-logo" src="assets/pdsa-logo.png" alt="Palo Duro Soccer Association crest">
+        <span class="brand-text">COMMUNITY <b>SOCCER</b><small>EST. 1994 · CANYON, TX</small></span>
+      </button>
+      <nav aria-label="Main navigation" class="site-nav" id="site-nav">
+        <details class="nav-dropdown"><summary>League</summary><div class="nav-menu"><button data-page="schedule">Schedule</button><button data-page="teams">Teams & Divisions</button><button data-page="rules">Official Rules</button><button data-page="appeals">Appeals & Discipline</button></div></details>
+        <details class="nav-dropdown"><summary>About & Resources</summary><div class="nav-menu"><button data-page="about">About Us / FAQ</button><button data-page="board">Board</button><button data-page="location">Location</button><button data-page="sponsors">Sponsors</button><button data-page="parents">Parents Guide</button><button data-page="coaches">Coaches Resources</button><button data-page="referees">Referees</button><button data-page="forms">Forms</button></div></details>
+        <button class="nav-login" data-page="login">Family Login</button>
+        <button class="nav-register" data-page="registration">Register</button>
+      </nav>
+      <div class="header-controls">
+        <button class="theme-button" id="theme-toggle" aria-label="Switch theme" title="Switch light/dark theme">☾ <span>Dark</span></button>
+        <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="shell" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><strong>PALO DURO SOCCER ASSOCIATION</strong><p>Foundational soccer development for youth in Canyon, Texas and the Texas Panhandle.</p><p>2766 Duniven Circle<br>Amarillo, TX 79109 Suite 2</p><a href="mailto:president.pdsoccer@gmail.com">Contact PDSA</a><br><a href="https://techform-canyon.example" target="_blank" rel="noopener noreferrer">Techform website ↗</a></div>
+      <div class="footer-links"><a href="https://www.facebook.com/PaloDuroSoccer/" target="_blank" rel="noopener noreferrer">PDSA on Facebook ↗</a><span>Sign-in uses Neon Auth · family records, registration, and payments are not connected</span><a href="https://www.palodurosoccer.com/refund-policies" target="_blank" rel="noopener noreferrer">Refund policy reference ↗</a><a href="https://www.palodurosoccer.com/privacy" target="_blank" rel="noopener noreferrer">Privacy reference ↗</a><a href="https://www.palodurosoccer.com/terms" target="_blank" rel="noopener noreferrer">Terms reference ↗</a></div>
+    </div>
+  </footer>
+  <div role="status" aria-live="polite" aria-atomic="true" id="toast" class="toast"></div>
+</body>
+</html>
